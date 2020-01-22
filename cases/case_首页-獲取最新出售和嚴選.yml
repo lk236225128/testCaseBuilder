@@ -1,0 +1,122 @@
+config:
+  base_url: https://www.8891.com.tw
+  name: 首页-獲取最新出售和嚴選
+  variables: {}
+teststeps:
+- name: '獲取最新出售和嚴選-api:3.6 filter:recently '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      filter: recently
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.7 filter:recently '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      filter: recently
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.8 filter:recently '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      filter: recently
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.8 filter:topdealer '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      filter: topdealer
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.7 filter:topdealer '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      filter: topdealer
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.6 filter:topdealer '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      filter: topdealer
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.6 filter:audiOrgani '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      filter: audiOrgani
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.7 filter:audiOrgani '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      filter: audiOrgani
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取最新出售和嚴選-api:3.8 filter:audiOrgani '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      filter: audiOrgani
+    url: /api/v3/Home/autos
+  validate:
+  - eq:
+    - status_code
+    - 200

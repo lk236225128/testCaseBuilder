@@ -1,0 +1,5 @@
+allpairspy==2.5.0
+elasticsearch==7.1.0
+PyYAML==5.2
+six==1.13.0
+urllib3==1.25.7

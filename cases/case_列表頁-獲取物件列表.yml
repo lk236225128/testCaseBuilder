@@ -1,0 +1,605 @@
+config:
+  base_url: https://www.8891.com.tw
+  name: 列表頁-獲取物件列表
+  variables: {}
+teststeps:
+- name: '獲取物件列表-api:3.6 sort:-25 feature:is_audit gas:-1100 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_audit
+      gas: '-1100'
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.7 sort:25-35 feature:is_report gas:-1100 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      feature: is_report
+      gas: '-1100'
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.8 sort:35-50 feature:is_check gas:-1100 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      feature: is_check
+      gas: '-1100'
+      sort: 35-50
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:50-100 feature:is_week gas:-1100 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_week
+      gas: '-1100'
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.1 sort:100- feature:is_video gas:-1100 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.1'
+      feature: is_video
+      gas: '-1100'
+      sort: 100-
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.1 sort:50-100 feature:is_check gas:1100-1600 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.1'
+      feature: is_check
+      gas: 1100-1600
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:35-50 feature:is_report gas:1100-1600 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_report
+      gas: 1100-1600
+      sort: 35-50
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.8 sort:25-35 feature:is_audit gas:1100-1600 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      feature: is_audit
+      gas: 1100-1600
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.7 sort:-25 feature:is_video gas:1100-1600 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      feature: is_video
+      gas: 1100-1600
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:100- feature:is_week gas:1100-1600 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_week
+      gas: 1100-1600
+      sort: 100-
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:50-100 feature:is_report gas:1600-1800 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_report
+      gas: 1600-1800
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.7 sort:35-50 feature:is_audit gas:1600-1800 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      feature: is_audit
+      gas: 1600-1800
+      sort: 35-50
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.8 sort:100- feature:is_report gas:1800-2000 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      feature: is_report
+      gas: 1800-2000
+      sort: 100-
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:-25 feature:is_check gas:1600-1800 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_check
+      gas: 1600-1800
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.1 sort:25-35 feature:is_week gas:1600-1800 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.1'
+      feature: is_week
+      gas: 1600-1800
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.1 sort:-25 feature:is_report gas:2000-2400 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.1'
+      feature: is_report
+      gas: 2000-2400
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:25-35 feature:is_video gas:2000-2400 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_video
+      gas: 2000-2400
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.8 sort:50-100 feature:is_video gas:2400-3500 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      feature: is_video
+      gas: 2400-3500
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.7 sort:100- feature:is_check gas:2000-2400 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      feature: is_check
+      gas: 2000-2400
+      sort: 100-
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:35-50 feature:is_video gas:1800-2000 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_video
+      gas: 1800-2000
+      sort: 35-50
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:25-35 feature:is_check gas:2400-3500 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_check
+      gas: 2400-3500
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.7 sort:50-100 feature:is_week gas:1800-2000 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      feature: is_week
+      gas: 1800-2000
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.8 sort:-25 feature:is_week gas:3500- '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      feature: is_week
+      gas: 3500-
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:100- feature:is_audit gas:2400-3500 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_audit
+      gas: 2400-3500
+      sort: 100-
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.1 sort:35-50 feature:is_audit gas:3500- '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.1'
+      feature: is_audit
+      gas: 3500-
+      sort: 35-50
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.1 sort:35-50 feature:is_week gas:2400-3500 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.1'
+      feature: is_week
+      gas: 2400-3500
+      sort: 35-50
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:50-100 feature:is_audit gas:2000-2400 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_audit
+      gas: 2000-2400
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:100- feature:is_check gas:3500- '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_check
+      gas: 3500-
+      sort: 100-
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.8 sort:-25 feature:is_video gas:1600-1800 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      feature: is_video
+      gas: 1600-1800
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.7 sort:-25 feature:is_report gas:2400-3500 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      feature: is_report
+      gas: 2400-3500
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:25-35 feature:is_report gas:3500- '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_report
+      gas: 3500-
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.0 sort:-25 feature:is_video gas:1800-2000 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.0'
+      feature: is_video
+      gas: 1800-2000
+      sort: '-25'
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:25-35 feature:is_video gas:3500- '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_video
+      gas: 3500-
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:25-35 feature:is_check gas:1800-2000 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_check
+      gas: 1800-2000
+      sort: 25-35
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:100- feature:is_audit gas:1600-1800 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_audit
+      gas: 1600-1800
+      sort: 100-
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:50-100 feature:is_audit gas:1800-2000 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_audit
+      gas: 1800-2000
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.6 sort:50-100 feature:is_week gas:2000-2400 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      feature: is_week
+      gas: 2000-2400
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.7 sort:50-100 feature:is_audit gas:3500- '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      feature: is_audit
+      gas: 3500-
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:3.8 sort:35-50 feature:is_audit gas:2000-2400 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      feature: is_audit
+      gas: 2000-2400
+      sort: 35-50
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '獲取物件列表-api:4.1 sort:50-100 feature:is_audit gas:1800-2000 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '4.1'
+      feature: is_audit
+      gas: 1800-2000
+      sort: 50-100
+    url: /api/v3/newAutos/getList
+  validate:
+  - eq:
+    - status_code
+    - 200

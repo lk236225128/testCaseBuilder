@@ -1,0 +1,31 @@
+﻿conf_name: '列表頁-獲取物件列表'
+base_url: 'https://www.8891.com.tw'
+url: "/api/v3/newAutos/getList"
+step_name: "獲取物件列表-"
+parameters:
+  api:
+    - '3.6'
+    - '3.7'
+    - '3.8'
+    - '4.0'
+    - '4.1'
+  sort:
+    - '-25'
+    - '25-35'
+    - '35-50'
+    - '50-100'
+    - '100-'
+  feature:
+    - 'is_audit'
+    - 'is_report'
+    - 'is_check'
+    - 'is_week'
+    - 'is_video'
+  gas:
+    -  '-1100'
+    - '1100-1600'
+    - '1600-1800'
+    - '1800-2000'
+    - '2000-2400'
+    - '2400-3500'
+    - '3500-'

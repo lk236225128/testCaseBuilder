@@ -1,0 +1,16 @@
+﻿conf_name: '列表頁-獲取物件列表'
+base_url: 'https://www.8891.com.tw'
+url: "/api/v3/Bulletin/get"
+step_name: "首頁-獲取快報-"
+parameters:
+  api:
+    - '3.6'
+    - '3.7'
+    - '3.8'
+    - '3.9'
+    - '4.0'
+    - '4.1'
+    - '4.2'
+    - '4.3'
+  sort:
+    - '-25'

@@ -1,0 +1,10 @@
+url:
+- /api/v3/Home/autos
+- /api/v3/Home/hot
+- /api/v3/Bulletin/get
+- /api/v3/u/center/
+- /api/v3/NewAutos/recommendList
+- /api/v4/organization/backstage/entrance
+- /api/v3/NewAuto/detail/
+- /api/v4/active/switch
+- /api/v3/Home/organizationAutos

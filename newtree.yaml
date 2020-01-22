@@ -1,0 +1,122 @@
+config:
+  base_url: https://www.8891.com.tw
+  name: 車行列表-獲取車行列表
+  variables: {}
+teststeps:
+- name: '/api/v3/Shop/getList車行列表頁-api:3.6 page:1 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      page: '1'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.7 page:1 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      page: '1'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.8 page:1 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      page: '1'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.8 page:2 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      page: '2'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.7 page:2 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      page: '2'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.6 page:2 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      page: '2'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.6 page:3 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.6'
+      page: '3'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.7 page:3 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.7'
+      page: '3'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200
+- name: '/api/v3/Shop/getList車行列表頁-api:3.8 page:3 '
+  request:
+    headers:
+      User-Agent: iOS 11.4 iPhone7,1 TW-zh-Hant car8891 3.5.0 com.Addcn.car8891
+    method: GET
+    params:
+      api: '3.8'
+      page: '3'
+    url: /api/v3/Shop/getList
+  validate:
+  - eq:
+    - status_code
+    - 200

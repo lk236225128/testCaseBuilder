@@ -1,0 +1,14 @@
+﻿conf_name: '首页-獲取最新出售和嚴選'
+base_url: 'https://www.8891.com.tw'
+url: "/api/v3/Home/autos"
+step_name: "獲取最新出售和嚴選-"
+parameters:
+  api:
+    - '3.6'
+    - '3.7'
+    - '3.8'
+  filter:
+    - 'recently'
+    - 'topdealer'
+    - 'audiOrgani'
+

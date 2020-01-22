@@ -1,0 +1,17 @@
+﻿conf_name: '車行列表-獲取車行列表'
+base_url: 'https://www.8891.com.tw'
+url: "/api/v3/Shop/getList"
+step_name: "/api/v3/Shop/getList車行列表頁-"
+parameters:
+  api:
+    - '3.6'
+    - '3.7'
+    - '3.8'
+  page:
+    - '1'
+    - '2'
+    - '3'
+  price:
+    - '1'
+    - '2'
+    - '3'

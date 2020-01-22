@@ -1,0 +1,17 @@
+url:
+- /api/v3/brands/
+- /api/v3/NewAutos/getList
+- /api/v3/NewAuto/description/
+- /api/v3/fraud/security
+- /api/v3/models
+- /api/v3/search/hotKeys
+- /api/v3/home/banner
+- /api/v3/Home/shops/
+- /api/v3/newAutos/getList
+- /api/v3/NewAutos/getcount
+- /api/v3/gtm/item
+- /api/v3/app/update/
+- /api/v3/newFilter/organization
+- /api/v3/gtm/search
+- /api/v3/newAuto/detail
+- /api/v3/sync/
